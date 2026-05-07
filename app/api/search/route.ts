@@ -13,20 +13,20 @@ export async function GET(request: NextRequest) {
     const results = await client.fetch(
       groq`
         {
-          "posts": *[_type == "post" && (title match $query || description match $query)] {
+          "posts": *[_type == "post" && (title match $searchTerm || description match $searchTerm)] {
             _id,
             title,
             slug,
             description,
             _type,
           },
-          "authors": *[_type == "author" && name match $query] {
+          "authors": *[_type == "author" && name match $searchTerm] {
             _id,
             name,
             slug,
             _type,
           },
-          "categories": *[_type == "category" && title match $query] {
+          "categories": *[_type == "category" && title match $searchTerm] {
             _id,
             title,
             slug,
@@ -34,7 +34,7 @@ export async function GET(request: NextRequest) {
           }
         }
       `,
-      { query: `*${query}*` }
+      { searchTerm: `*${query}*` }
     );
 
     const allResults = [

@@ -1,7 +1,6 @@
 import { PortableTextReactComponents } from "@portabletext/react";
-import Link from "next/link";
 
-export const portableTextComponents: PortableTextReactComponents = {
+export const portableTextComponents = {
   types: {
     image: ({ value }: any) => {
       return (
@@ -27,4 +26,4 @@ export const portableTextComponents: PortableTextReactComponents = {
       );
     },
   },
-};
+} satisfies Partial<PortableTextReactComponents>;
