@@ -7,7 +7,7 @@ export default function ContactPage() {
       <Header />
       <main className="bg-white min-h-screen">
         <div className="max-w-2xl mx-auto px-4 py-12">
-          <h1 className="text-4xl font-bold mb-8">Contact Us</h1>
+          <h1 className="text-4xl font-bold mb-8 text-gray-700">Contact Us</h1>
 
           <div className="bg-gray-50 rounded-lg p-8 mb-8">
             <form className="space-y-6">
@@ -75,17 +75,17 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-3xl mb-2">📧</div>
-              <h3 className="font-semibold mb-2">Email</h3>
+              <h3 className="font-semibold mb-2 text-gray-700">Email</h3>
               <p className="text-gray-800">contact@mediumclone.com</p>
             </div>
             <div className="text-center">
               <div className="text-3xl mb-2">📍</div>
-              <h3 className="font-semibold mb-2">Location</h3>
+              <h3 className="font-semibold mb-2 text-gray-700">Location</h3>
               <p className="text-gray-800">San Francisco, CA</p>
             </div>
             <div className="text-center">
               <div className="text-3xl mb-2">🌐</div>
-              <h3 className="font-semibold mb-2">Social</h3>
+              <h3 className="font-semibold mb-2 text-gray-700">Social</h3>
               <p className="text-gray-800">@mediumclone</p>
             </div>
           </div>

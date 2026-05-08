@@ -44,7 +44,7 @@ export default async function PostPage({ params }: PostPageProps) {
       {/* Article Content */}
       <div className="max-w-2xl mx-auto px-4 py-12">
         {/* Title */}
-        <h1 className="text-5xl font-bold mb-6 text-gray-900">{post.title}</h1>
+        <h1 className="text-5xl font-bold mb-6 text-gray-900 text-center">{post.title}</h1>
 
         {/* Meta Information */}
         <div className="flex items-center gap-4 mb-8 pb-8 border-b">

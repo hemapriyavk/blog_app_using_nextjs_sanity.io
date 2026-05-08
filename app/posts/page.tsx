@@ -1,10 +1,13 @@
 import { getPosts } from "@/sanity/lib/queries";
 import { PostCard } from "../components/PostCard";
+import { Header } from "../components/Header";
 
 export default async function PostsPage() {
   const posts = await getPosts();
 
   return (
+    <>
+    <Header />
     <div className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-12 text-gray-700">Latest Posts</h1>
@@ -20,5 +23,7 @@ export default async function PostsPage() {
         )}
       </div>
     </div>
+    </>
+    
   );
 }

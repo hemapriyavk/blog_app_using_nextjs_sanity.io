@@ -5,12 +5,12 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/">
-          <div className="text-2xl font-bold bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent">
+          <div className="text-2xl font-bold bg-linear-to-r from-black to-gray-600 bg-clip-text text-transparent">
             Medium Clone
           </div>
         </Link>
 
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex gap-8 text-gray-800 font-medium">
           <Link href="/posts" className="hover:text-gray-600 transition-colors">
             Posts
           </Link>
